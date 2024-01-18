@@ -1,7 +1,14 @@
 project('CBBS', 'c')
 
-src = [
-    './src/main.c'
+installation = get_option('install_dir')
+
+buildsys_src = [
+    './src/error.c',
+    './src/buildsys/buildsys.c',
+    './src/buildsys/buildfile.c',
+    './src/buildsys/cache.c',
 ]
 
-executable('cbbs', src)
+buildsys_include = include_directories('include')
+
+executable('buildsys', buildsys_src, include_directories: buildsys_include, install: true, install_dir: installation)

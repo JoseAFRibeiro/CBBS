@@ -1,0 +1,1 @@
+option('install_dir', type: 'string', value: 'defaultval', description: 'path to instalation folder')
