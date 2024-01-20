@@ -1,5 +1,8 @@
 project('CBBS', 'c')
 
+compiler = meson.get_compiler('c')
+
+
 installation = get_option('install_dir')
 
 buildsys_src = [
