@@ -1,0 +1,10 @@
+#ifndef BUILDSYS_CACHE_H_
+#define BUILDSYS_CACHE_H_
+
+#define CACHEFILE_PATH "./cbbs/system.cache"
+
+#define CACHEFILE_ERROR 1
+#define CACHEFILE_EXISTS 2
+#define CACHEFILE_CREATED 0
+
+#endif // E__PROGRAMAS_C_CBBS_INLCUDE_BUILDSYS_CACHE_H_
